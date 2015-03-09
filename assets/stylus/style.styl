@@ -4,7 +4,55 @@
 // // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js)
 @import url(http://fonts.googleapis.com/css?family=Oswald)
 @import url(https://bootswatch.com/cyborg/bootstrap.min.css)
-	
+
+c_orange = #FF3D00	
 body
 	font-family 'Oswald', sans-serif
+	backgorund-color #FFFF01	
+
+header
+	margin 90px auto
+	text-align center
+	img
+		height 120px
+		width 120px
+		border-radius 50%
+		border 1px solid colorBlue
+	p
+		margin-top 10px	
+		font-size 20px
+
+.line
+	border-bottom 1px solid c_orange 	
+	width 80%
+	margin 0 auto
 	
+
+.Proect
+	display flex
+	justify-content space-around
+	flex-wrap wrap	
+	
+.proyect_child
+	position relative
+	margin-top 1.5em
+	border-rigth 4px solid white	
+	text-align center	
+	width 250px
+	height 250px
+	border-radius 50%
+	text-align center
+	h3
+		margin-top 14em
+		margin-bottom .5em
+	p	
+		margin 0
+	a	
+		color colorVerde
+		text-decoration none
+		border-radius .2em
+		padding .2em .6em
+		&:hover
+			background-color colorVerde
+			color #FFFFFF
+			transition all .3s ease	

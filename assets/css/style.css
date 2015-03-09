@@ -1,3 +1,3 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald");
 @import url("https://bootswatch.com/cyborg/bootstrap.min.css");
-body{font-family:'Oswald',sans-serif}
+body{font-family:'Oswald',sans-serif;backgorund-color:#ffff01}header{margin:90px auto;text-align:center;}header img{height:120px;width:120px;border-radius:50%;border:1px solid colorBlue}header p{margin-top:10px;font-size:20px}.line{border-bottom:1px solid #ff3d00;width:80%;margin:0 auto}.Proect{display:flex;justify-content:space-around;flex-wrap:wrap}.proyect_child{position:relative;margin-top:1.5em;border-rigth:4px solid #fff;text-align:center;width:250px;height:250px;border-radius:50%;text-align:center;}.proyect_child h3{margin-top:14em;margin-bottom:.5em}.proyect_child p{margin:0}.proyect_child a{color:colorVerde;text-decoration:none;border-radius:.2em;padding:.2em .6em;}.proyect_child a:hover{background-color:colorVerde;color:#fff;transition:all .3s ease}
