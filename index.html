@@ -5,8 +5,14 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Curriculum Vitae</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+  <script>
+     $$('body').scrollspy({ target: '.navbar-example' });
+     $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh')
+      })
+  </script>
 </head>
-<body>
+<body class="body" data-spy="scroll" data-target=".navbar-example">
 	<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,9 +31,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav nav-td">
-        <li><a href="#">yo</a>
+        <li><a href="#me">yo</a>
         </li>
-        <li><a href="#">Hábilidades</a></li>
+        <li><a href="#habilities">Hábilidades</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Más <span class="caret"></span></a>
           <ul class="dropdown-menu nav-td" role="menu">
@@ -49,16 +55,95 @@
 
 <header>
   <img src="assets/img/avatar-2E.jpg" alt="">
-  <p>@rianveal</p>
+  <p><a href="#" title="ir a twitter" class="link">@rianveal</a></p>
   <div class="line"></div>
 </header>
 
-<section class="proyect">
-  <article class="leyend_chil"><2/article>
-  <article class="leyend_chil">3</article>
-  <article class="leyend_chil"></article>3
+<section class="me">
+  <article>
+    <h4>Hola...!</h4>
+    <p>Soy <span class="link">Ricardo Andres Velasquez Alvis</span>. conocido en twitter como <a href="" class="link">@rianveal</a> adipisicing elit. Voluptatem iusto nobis nam ipsa repellendus, expedita vel adipisci facilis soluta laborum quibusdam temporibus magni, culpa quidem. Asperiores saepe cupiditate, reiciendis ullam.</p>
+  </article>
 </section>
 
+<section class="project">
+  <div class="project_title">
+    <h3>Proyectos</h3>
+  </div>
+  <article class="project_child">
+    <img src="assets/img/rocket_img.png" alt="">
+    <h2>SIGBER ASOCOMP</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repudiandae, voluptas dolore, fuga delectus sapiente ducimus, et animi aspernatur laudantium illum atque dolorem nulla doloremque. Officia placeat, similique saepe libero.</p>
+    <a href="#">Leer mas</a>
+  </article>
+  <article class="project_child">
+    <img src="assets/img/rocket_img.png" alt="">
+    <h2>SIMPHE</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repudiandae, voluptas dolore, fuga delectus sapiente ducimus, et animi aspernatur laudantium illum atque dolorem nulla doloremque. Officia placeat, similique saepe libero.</p>
+    <a href="#">Leer mas</a>
+  </article>
+  <article class="project_child">
+    <img src="assets/img/rocket_img.png" alt="">
+    <h2>SAPDEMA</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repudiandae, voluptas dolore, fuga delectus sapiente ducimus, et animi aspernatur laudantium illum atque dolorem nulla doloremque. Officia placeat, similique saepe libero.</p>
+    <a href="#">Leer mas</a>
+  </article>
+</section>
+
+<div id="me">
+  <br><br>
+</div>
+<div>
+  <h1>Aqui yo</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam beatae, quis enim eveniet facilis labore ratione. Quae quas pariatur incidunt. Animi modi suscipit quaerat. Nemo expedita tempora saepe eaque corporis!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam beatae, quis enim eveniet facilis labore ratione. Quae quas pariatur incidunt. Animi modi suscipit quaerat. Nemo expedita tempora saepe eaque corporis!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam beatae, quis enim eveniet facilis labore ratione. Quae quas pariatur incidunt. Animi modi suscipit quaerat. Nemo expedita tempora saepe eaque corporis!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam beatae, quis enim eveniet facilis labore ratione. Quae quas pariatur incidunt. Animi modi suscipit quaerat. Nemo expedita tempora saepe eaque corporis!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam beatae, quis enim eveniet facilis labore ratione. Quae quas pariatur incidunt. Animi modi suscipit quaerat. Nemo expedita tempora saepe eaque corporis!</p>
+</div>
+
+<div id="habilities"><br><br></div>
+<div>
+  <h1>Habilities</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima quia dolor, sint ab neque repellat odio nemo quisquam quas distinctio eligendi porro cupiditate magni delectus officia expedita maxime nam!</p>
+  <p>Excepturi sapiente repudiandae a, accusantium atque facilis tempore quam maxime voluptatibus cupiditate beatae totam ipsam sit dolore, repellendus voluptatem recusandae esse, ad non vero delectus fugiat consectetur sed! Culpa, aliquid?</p>
+  <p>Ea illo quam repellendus assumenda, odio aliquid. A vero quod beatae quas laudantium ullam consectetur omnis, praesentium ratione mollitia officia quos architecto doloribus enim adipisci tempora quae rerum ipsam at!</p>
+  <p>Aspernatur eligendi, tempore adipisci. Consequatur voluptatem aspernatur illo vel dolores quibusdam corrupti adipisci recusandae autem magnam. Quam dolorem suscipit minus sunt deserunt, perferendis, ad iste incidunt nemo aliquam quo, ab.</p>
+  <p>Consequuntur tenetur quo maxime et ducimus tempora quidem facere molestiae. Asperiores repudiandae, reiciendis fuga, atque similique illo corporis unde illum accusamus blanditiis. Officiis ratione quaerat libero iste maxime deleniti impedit?</p>
+</div>
+
+<footer>
+  <span>
+      <a href="#" class="link_gray" data-toggle="modal" data-target="#exampleModal" data-whatever="@fati">Contactame</a>
+  </span>
+</footer>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h4>
+      </div>  
+         <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">Destinatario:</label>
+              <input type="text" class="form-control" id="recipient-name" value="rianveal@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="control-label">Mensaje:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+         </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+      </div> 
+    </div>
+  </div>
+</div>      
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>

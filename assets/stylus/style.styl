@@ -5,15 +5,27 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald)
 @import url(https://bootswatch.com/cyborg/bootstrap.min.css)
 
-c_orange = #FF3D00	
+c_orange = #FF3D00
+c_write = #FFFFFF
+c_black = #060606
+c_gray = #888888
+
+	
 body
 	font-family 'Oswald', sans-serif
-	backgorund-color #FFFF01	
+	
+.body
+	background-color #F5F5F5
 
 header
-	margin 90px auto
+	// margin-top 90px
+	margin-right auto
+	margin-left auto
 	text-align center
+	background url('../img/background_sm.jpg')
+	color c_orange
 	img
+		margin-top 90px
 		height 120px
 		width 120px
 		border-radius 50%
@@ -24,35 +36,101 @@ header
 
 .line
 	border-bottom 1px solid c_orange 	
-	width 80%
 	margin 0 auto
 	
+.link
+	color c_orange
+	&:hover
+		text-decoration none
+		color c_write
 
-.Proect
+.link_gray
+	color c_gray
+	&:hover
+		text-decoration none
+		color c_write		
+
+.me
+	margin-top 32px
+	article
+		margin o auto
+		padding-left 41px
+		padding-right 41px
+		text-align justify
+		h4
+			color c_orange
+		
+
+	
+.project
 	display flex
 	justify-content space-around
-	flex-wrap wrap	
+	flex-wrap wrap
 	
-.proyect_child
-	position relative
-	margin-top 1.5em
-	border-rigth 4px solid white	
-	text-align center	
-	width 250px
-	height 250px
-	border-radius 50%
+
+.project_title
+	width 100%
 	text-align center
 	h3
-		margin-top 14em
-		margin-bottom .5em
-	p	
-		margin 0
-	a	
-		color colorVerde
+		font-size 32px			
+		color c_black
+	
+.project_child
+	margin-top 16px
+	border-rigth 4px solid c_write	
+	text-align center	
+	width 300px
+	height 360px
+	text-align center		
+	// background-color rgba(255, 61, 0, 0.5)
+	border-bottom 1px solid rgba(255, 61, 0, 0.5) 	
+	img
+		margin-top 8px
+	h2
+		font-size 20px
+		color c_black
+	p
+		text-align justify
+		padding-left 12px
+		padding-right 12px	
+	a
 		text-decoration none
 		border-radius .2em
 		padding .2em .6em
 		&:hover
-			background-color colorVerde
 			color #FFFFFF
 			transition all .3s ease	
+	&:nth-child(1)
+		margin-top 64px	
+
+footer
+	margin-top 20px
+	height 40px		
+	background-color c_black
+	span
+		padding-left 16px
+		line-height 40px 
+		a
+			color c_gray
+			
+.space
+	height 100px
+
+@media screen and (min-width 450px)
+
+	header
+		background url('../img/background.jpg')
+		
+
+	.me
+		article
+			margin o auto
+			padding-left 70px
+			padding-right 70px	
+
+// @media screen and (min-width 750px)
+
+// @media screen and (min-width 1000px)
+
+			
+	
