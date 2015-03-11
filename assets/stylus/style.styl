@@ -9,7 +9,7 @@ c_orange = #FF3D00
 c_write = #FFFFFF
 c_black = #060606
 c_gray = #888888
-
+// background-color rgba(255, 61, 0, 0.4)
 	
 body
 	font-family 'Oswald', sans-serif
@@ -40,16 +40,25 @@ header
 	
 .link
 	color c_orange
+	
+
+.link_gray
+	color c_black
+	background-color rgba(85, 172, 238, 0.6)
+	padding 2px 10px
+	border-radius 8px
 	&:hover
 		text-decoration none
 		color c_write
 
-.link_gray
-	color c_gray
+.link_black
+	color c_black
 	&:hover
 		text-decoration none
-		color c_write		
-
+		color c_write				
+.wrap
+	height 20px
+	
 .me
 	margin-top 32px
 	article
@@ -59,9 +68,9 @@ header
 		text-align justify
 		h4
 			color c_orange
+		p
+			color c_black	
 		
-
-	
 .project
 	display flex
 	justify-content space-around
@@ -89,10 +98,12 @@ header
 	h2
 		font-size 20px
 		color c_black
+		font-weight bold
 	p
 		text-align justify
 		padding-left 12px
-		padding-right 12px	
+		padding-right 12px
+		color c_black	
 	a
 		text-decoration none
 		border-radius .2em
@@ -119,14 +130,16 @@ footer
 @media screen and (min-width 450px)
 
 	header
-		background url('../img/background.jpg')
-		
+		background url('../img/background.jpg')	
 
 	.me
 		article
 			margin o auto
 			padding-left 70px
-			padding-right 70px	
+			padding-right 70px
+			p
+				font-size 18px
+			   		 
 
 // @media screen and (min-width 750px)
 
