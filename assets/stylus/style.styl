@@ -7,15 +7,19 @@
 
 c_orange = #FF3D00
 c_write = #FFFFFF
+c_write_down = #F5F5F5
 c_black = #060606
 c_gray = #888888
+c_blue = rgba(85, 172, 238, 0.6)
+c_black_down = rgba(6, 6, 6, 0.6)
 // background-color rgba(255, 61, 0, 0.4)
 	
 body
 	font-family 'Oswald', sans-serif
 	
 .body
-	background-color #F5F5F5
+	background-color c_write_down
+	
 
 header
 	// margin-top 90px
@@ -24,30 +28,57 @@ header
 	text-align center
 	background url('../img/background_sm.jpg')
 	color c_orange
-	img
-		margin-top 90px
-		height 120px
-		width 120px
-		border-radius 50%
-		border 1px solid colorBlue
 	p
 		margin-top 10px	
 		font-size 20px
+	
+.avatar
+	margin-top 90px
+	height 120px
+	width 120px
+	border-radius 50%
+	border 1px solid colorBlue
 
+.social_ntwr
+	background-color c_black_down
+	padding 4px 13px
+	color c_blue
+	line-height 20px
+	border-radius 12px
+	img
+		margin-top -8px
+		width 30px
+		height 30px
+		-webkit-animation none
+		-moz-animation none
+		-ms-animation none
+		animation none
+		
+.social_ntwr:hover
+	text-decoration none
+	img
+		-webkit-animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
+  		-ms-animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
+	  	animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
+	
 .line
-	border-bottom 1px solid c_orange 	
+	border-bottom 1px solid c_write	
 	margin 0 auto
 	
 .link
 	color c_orange
 	
 
-.link_gray
-	color c_black
-	background-color rgba(85, 172, 238, 0.6)
+.link_write
+	color c_write
+	background-color colorBlue
 	padding 2px 10px
 	border-radius 8px
 	&:hover
+		text-decoration none
+		color c_write
+	&:focus
+		outline-color transparent	
 		text-decoration none
 		color c_write
 
@@ -109,7 +140,7 @@ header
 		border-radius .2em
 		padding .2em .6em
 		&:hover
-			color #FFFFFF
+			color c_write
 			transition all .3s ease	
 	&:nth-child(1)
 		margin-top 64px	
@@ -127,18 +158,24 @@ footer
 .space
 	height 100px
 
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}	
+
 @media screen and (min-width 450px)
 
 	header
 		background url('../img/background.jpg')	
-
+	
 	.me
 		article
 			margin o auto
 			padding-left 70px
 			padding-right 70px
 			p
-				font-size 18px
+				font-size 18px								
 			   		 
 
 // @media screen and (min-width 750px)
