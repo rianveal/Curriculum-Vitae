@@ -4,6 +4,7 @@
 // // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js)
 @import url(http://fonts.googleapis.com/css?family=Oswald)
 @import url(https://bootswatch.com/cyborg/bootstrap.min.css)
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css)
 
 c_orange = #FF3D00
 c_write = #FFFFFF
@@ -12,6 +13,9 @@ c_black = #060606
 c_gray = #888888
 c_blue = rgba(85, 172, 238, 0.6)
 c_black_down = rgba(6, 6, 6, 0.6)
+c_twt = #00a4e4
+c_fbk = #146Eb4
+c_gle = #DD4B39
 // background-color rgba(255, 61, 0, 0.4)
 	
 body
@@ -19,7 +23,25 @@ body
 	
 .body
 	background-color c_write_down
+
+.twt
+	&:hover
+		color c_twt
+
+.gle
+	&:hover
+		color c_gle
 	
+.fbk
+	&:hover
+		color c_fbk
+
+.ghb
+	&:hover
+		color c_black
+	
+.base
+	color c_black					
 
 header
 	// margin-top 90px
@@ -29,9 +51,10 @@ header
 	background url('../img/background_sm.jpg')
 	color c_orange
 	p
-		margin-top 10px	
+		margin-top 2px	
 		font-size 20px
 	
+
 .avatar
 	margin-top 90px
 	height 120px
@@ -40,7 +63,7 @@ header
 	border 1px solid colorBlue
 
 .social_ntwr
-	background-color c_black_down
+	// background-color c_black_down
 	padding 4px 13px
 	color c_blue
 	line-height 20px
@@ -54,12 +77,12 @@ header
 		-ms-animation none
 		animation none
 		
-.social_ntwr:hover
-	text-decoration none
-	img
-		-webkit-animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
-  		-ms-animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
-	  	animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
+.social_ntwr
+	a
+		&:hover
+			-webkit-animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
+  			-ms-animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
+	  		animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
 	
 .line
 	border-bottom 1px solid c_write	
@@ -167,7 +190,8 @@ footer
 @media screen and (min-width 450px)
 
 	header
-		background url('../img/background.jpg')	
+		background url('../img/background.jpg')
+			
 	
 	.me
 		article
