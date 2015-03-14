@@ -48,15 +48,19 @@ header
 	margin-right auto
 	margin-left auto
 	text-align center
-	background url('../img/background_sm.jpg')
+	background url('../img/background_sm.png')
+	background-size cover
+    background-position center
 	color c_orange
 	p
 		margin-top 2px	
 		font-size 20px
 	
+.description
+	display none	
 
 .avatar
-	margin-top 90px
+	margin-top 100px
 	height 120px
 	width 120px
 	border-radius 50%
@@ -115,6 +119,8 @@ header
 	
 .me
 	margin-top 32px
+	padding-left 35px
+	padding-right 80px
 	article
 		margin o auto
 		padding-left 41px
@@ -123,8 +129,16 @@ header
 		h4
 			color c_orange
 		p
-			color c_black	
-		
+			color c_black
+				
+
+.habilities
+	ul
+		margin-top 20px
+		color c_orange
+		list-style none
+		text-align justify		
+
 .project
 	display flex
 	justify-content space-around
@@ -135,8 +149,9 @@ header
 	width 100%
 	text-align center
 	h3
-		font-size 32px			
+		font-size 28px			
 		color c_black
+		font-weight bold
 	
 .project_child
 	margin-top 16px
@@ -190,8 +205,14 @@ footer
 @media screen and (min-width 450px)
 
 	header
-		background url('../img/background.jpg')
-			
+		background url('../img/background_bg.png')
+					
+	.avatar
+		margin-top 90px
+		height 150px
+		width 150px
+		border-radius 50%
+		border 1px solid colorBlue	
 	
 	.me
 		article
@@ -199,7 +220,9 @@ footer
 			padding-left 70px
 			padding-right 70px
 			p
-				font-size 18px								
+				font-size 20px
+				color c_gray
+				font-weight none								
 			   		 
 
 // @media screen and (min-width 750px)
