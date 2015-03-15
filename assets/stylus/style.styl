@@ -20,6 +20,7 @@ c_gle = #DD4B39
 	
 body
 	font-family 'Oswald', sans-serif
+	height 100%
 	
 .body
 	background-color c_write_down
@@ -45,10 +46,12 @@ body
 
 header
 	// margin-top 90px
+	position relative	
+	height 100%	
 	margin-right auto
 	margin-left auto
 	text-align center
-	background url('../img/background_sm.png')
+	background url('../img/background_bg.png')
 	background-size cover
     background-position center
 	color c_orange
@@ -56,6 +59,20 @@ header
 		margin-top 2px	
 		font-size 20px
 	
+.arrow
+	// position absolute
+	// left 50%
+	// top 98%
+	p
+		color c_black
+		span
+			color c_write	
+	a	
+		color c_black	
+		height 40px
+		width 40px
+		border-radius 50% 
+
 .description
 	display none	
 
@@ -120,16 +137,15 @@ header
 .me
 	margin-top 32px
 	padding-left 35px
-	padding-right 80px
+	padding-right 35px
 	article
 		margin o auto
-		padding-left 41px
-		padding-right 41px
 		text-align justify
 		h4
 			color c_orange
 		p
 			color c_black
+			font-size 18px
 				
 
 .habilities
@@ -195,17 +211,13 @@ footer
 			
 .space
 	height 100px
-
-
+	  
 @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}	
 
 @media screen and (min-width 450px)
-
-	header
-		background url('../img/background_bg.png')
 					
 	.avatar
 		margin-top 90px
@@ -220,8 +232,7 @@ footer
 			padding-left 70px
 			padding-right 70px
 			p
-				font-size 20px
-				color c_gray
+				color c_black
 				font-weight none								
 			   		 
 
