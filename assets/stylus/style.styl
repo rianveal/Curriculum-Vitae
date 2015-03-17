@@ -13,9 +13,10 @@ c_black = #060606
 c_gray = #888888
 c_blue = rgba(85, 172, 238, 0.6)
 c_black_down = rgba(6, 6, 6, 0.6)
-c_twt = #00a4e4
-c_fbk = #146Eb4
+c_twt = #55acee
+c_fbk = #3b5998
 c_gle = #DD4B39
+c_ghb = #333333
 // background-color rgba(255, 61, 0, 0.4)
 	
 body
@@ -39,7 +40,7 @@ body
 
 .ghb
 	&:hover
-		color c_black
+		color c_ghb
 	
 .base
 	color c_black					
@@ -60,9 +61,6 @@ header
 		font-size 20px
 	
 .arrow
-	// position absolute
-	// left 50%
-	// top 98%
 	p
 		color c_black
 		span
@@ -71,7 +69,10 @@ header
 		color c_black	
 		height 40px
 		width 40px
-		border-radius 50% 
+		border-radius 50%
+		&:hover
+			color c_orange
+			transition 7s			
 
 .description
 	display none	
@@ -106,7 +107,7 @@ header
 	  		animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
 	
 .line
-	border-bottom 1px solid c_write	
+	border-bottom 1px solid c_orange
 	margin 0 auto
 	
 .link
@@ -174,7 +175,7 @@ header
 	border-rigth 4px solid c_write	
 	text-align center	
 	width 300px
-	height 360px
+	height 300px
 	text-align center		
 	// background-color rgba(255, 61, 0, 0.5)
 	border-bottom 1px solid rgba(255, 61, 0, 0.5) 	
@@ -216,6 +217,7 @@ footer
 @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}	
+
 
 @media screen and (min-width 450px)
 					
