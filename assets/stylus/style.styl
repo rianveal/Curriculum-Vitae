@@ -1,14 +1,10 @@
-// @import url(http://fonts.googleapis.com/css?family=Oswald)
-// @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css)
-// // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css)
-// // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js)
-@import url(http://fonts.googleapis.com/css?family=Oswald)
+@import url(http://fonts.googleapis.com/css?family=Roboto)
 @import url(https://bootswatch.com/cyborg/bootstrap.min.css)
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css)
 
 c_orange = #FF3D00
-c_write = #FFFFFF
-c_write_down = #F5F5F5
+c_white = #FFFFFF
+c_white_down = #F5F5F5
 c_black = #060606
 c_gray = #888888
 c_blue = rgba(85, 172, 238, 0.6)
@@ -20,11 +16,43 @@ c_ghb = #333333
 // background-color rgba(255, 61, 0, 0.4)
 	
 body
-	font-family 'Oswald', sans-serif
+	font-family 'Roboto', sans-serif
 	height 100%
+
+header
+	// margin-top 90px
+	position relative	
+	height 100%	
+	margin-right auto
+	margin-left auto
+	text-align center
+	background url('../img/background_bg.png')
+	background-size cover
+    background-position center
+	color c_orange
+	p
+		margin-top 2px	
+		font-size 20px
+
+footer
+	margin-top 20px
+	height 40px		
+	background-color c_black
+	.link_white
+		line-height 50px
+	span
+		padding-left 16px
+		line-height 50px 
+		a
+			color c_gray		
+			
+i
+	&:after
+		content ''
+		padding-right 5px					
 	
 .body
-	background-color c_write_down
+	background-color c_white_down
 
 .twt
 	&:hover
@@ -43,35 +71,20 @@ body
 		color c_ghb
 	
 .base
-	color c_black					
-
-header
-	// margin-top 90px
-	position relative	
-	height 100%	
-	margin-right auto
-	margin-left auto
-	text-align center
-	background url('../img/background_bg.png')
-	background-size cover
-    background-position center
-	color c_orange
-	p
-		margin-top 2px	
-		font-size 20px
+	color c_white					
 	
 .arrow
 	p
 		color c_black
 		span
-			color c_write	
+			color c_white	
 	a	
-		color c_black	
+		color c_orange	
 		height 40px
 		width 40px
 		border-radius 50%
 		&:hover
-			color c_orange
+			color c_white
 			transition 7s			
 
 .description
@@ -112,30 +125,30 @@ header
 	
 .link
 	color c_orange
-	
+			
 
-.link_write
-	color c_write
+.link_white
+	color c_white
 	background-color colorBlue
 	padding 2px 10px
 	border-radius 8px
 	&:hover
 		text-decoration none
-		color c_write
+		color c_white
 	&:focus
 		outline-color transparent	
 		text-decoration none
-		color c_write
+		color c_white
 
 .link_black
 	color c_black
 	&:hover
 		text-decoration none
-		color c_write				
+		color c_white				
 .wrap
 	height 20px
 	
-.me
+.section
 	margin-top 32px
 	padding-left 35px
 	padding-right 35px
@@ -147,6 +160,13 @@ header
 		p
 			color c_black
 			font-size 18px
+			font-weight 100
+		a
+			color c_orange
+			text-decoration none
+			&:hover
+				color c_blue
+				transition all .3s ease		
 				
 
 .habilities
@@ -172,7 +192,7 @@ header
 	
 .project_child
 	margin-top 16px
-	border-rigth 4px solid c_write	
+	border-rigth 4px solid c_white	
 	text-align center	
 	width 300px
 	height 300px
@@ -194,24 +214,18 @@ header
 		text-decoration none
 		border-radius .2em
 		padding .2em .6em
+		color c_orange
 		&:hover
-			color c_write
+			color c_blue
 			transition all .3s ease	
 	&:nth-child(1)
 		margin-top 64px	
 
-footer
-	margin-top 20px
-	height 40px		
-	background-color c_black
-	span
-		padding-left 16px
-		line-height 40px 
-		a
-			color c_gray
-			
+
 .space
 	height 100px
+	
+			
 	  
 @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
@@ -228,7 +242,7 @@ footer
 		border-radius 50%
 		border 1px solid colorBlue	
 	
-	.me
+	.section
 		article
 			margin o auto
 			padding-left 70px
