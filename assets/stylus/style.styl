@@ -13,6 +13,8 @@ c_twt = #55acee
 c_fbk = #3b5998
 c_gle = #DD4B39
 c_ghb = #333333
+c_lkd = #0976b4
+
 // background-color rgba(255, 61, 0, 0.4)
 	
 body
@@ -20,7 +22,6 @@ body
 	height 100%
 
 header
-	// margin-top 90px
 	position relative	
 	height 100%	
 	margin-right auto
@@ -69,6 +70,10 @@ i
 .ghb
 	&:hover
 		color c_ghb
+
+.lkd
+	&:hover
+		color c_lkd		
 	
 .base
 	color c_white					
@@ -98,7 +103,6 @@ i
 	border 1px solid colorBlue
 
 .social_ntwr
-	// background-color c_black_down
 	padding 4px 13px
 	color c_blue
 	line-height 20px
@@ -120,8 +124,15 @@ i
 	  		animation pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
 	
 .line
-	border-bottom 1px solid c_orange
+	border-bottom 2px solid c_orange
 	margin 0 auto
+
+.short
+	border-bottom 1px solid c_black
+	margin-top -5px
+	margin-bottom 12px
+	width 20%
+	
 	
 .link
 	color c_orange
@@ -197,7 +208,6 @@ i
 	width 300px
 	height 300px
 	text-align center		
-	// background-color rgba(255, 61, 0, 0.5)
 	border-bottom 1px solid rgba(255, 61, 0, 0.5) 	
 	img
 		margin-top 8px
@@ -232,9 +242,8 @@ i
 	background-color c_orange
 
 .img
-	background url('../img/proyecto/Img 1.png')
-	height 300px
-	width 100%	
+		height 150px
+		width 100%	
 	  
 @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
@@ -247,6 +256,10 @@ i
 	.container
 		padding-left 30px
 		padding-right 30px
+
+	.img
+		height 300px
+		width 100%		
 					
 	.avatar
 		margin-top 90px
